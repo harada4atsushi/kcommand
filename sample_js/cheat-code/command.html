@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Cheat code sample code</title>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.cheat-code.js"></script>
+<script type="text/javascript">
+  $(document).cheatCode({ 
+    code : '38,37,40,39', // コードを調べてカンマ区切りで記述
+    activated : function(){ // コマンド実行時の処理を記述
+      alert('Executed'); 
+    } 
+  });
+</script>
+</head>
+<body>
+Konami command<br />
+↑←↓→
+</body>
+</html> 
