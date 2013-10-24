@@ -1,6 +1,9 @@
 (function($) {
+  //var url = "http://harada-atsushi.site44.com";
+  var url = "file://localhost/Users/haradaatsushi/source_code/workspace";
 	var defaultHeight = 70;
 	var defaultDuration = 2500;
+	
 	var defaultFn = function(imgName, height, duration) {
 		$img = $('<img src="' + imgName + '"  />').css('position', 'absolute').css('height', height ? height : defaultHeight);
 		$img.css('top', '50%').css('left', - $img.width()).css('margin-top', -($img.height() / 2));
@@ -12,9 +15,9 @@
 	
 	// builtin Images
 	var imgPaths = {
-		default: 'http://harada-atsushi.site44.com/kcommand/images/gradius.png',
-		yoyo: 'http://harada-atsushi.site44.com/kcommand/images/yoyo.png',
-		fsm: 'http://harada-atsushi.site44.com/kcommand/images/fsm.gif',
+		default: url + '/kcommand/images/gradius.png',
+		yoyo: url + '/kcommand/images/yoyo.png',
+		fsm: url + '/kcommand/images/fsm.png',
 	};
 	
 	// builtin command function
