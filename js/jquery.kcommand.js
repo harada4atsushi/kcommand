@@ -18,6 +18,7 @@
 		default: url + '/kcommand/images/gradius.png',
 		yoyo: url + '/kcommand/images/yoyo.png',
 		fsm: url + '/kcommand/images/fsm.png',
+		abalol: url + '/kcommand/images/abalol.png',
 	};
 	
 	// builtin command function
@@ -33,6 +34,10 @@
 		// fsm
 		'70,83,77': function() {
 			defaultFn(imgPaths.fsm, 100, 2000);
+		},
+		// abalo
+		'65,66,65,76,79': function() {
+			defaultFn(imgPaths.abalol, 300, 2000);
 		},
 	};
 
